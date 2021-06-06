@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: gray;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="Home Page.html">Home</a>
+  <a href="Store.html">Store</a>
+  <a href="index.html">Gallery</a>
+  <a href="Quiz.html">Quiz</a>
+  <a href="Feedback.html">Feedback</a>
+  <a href="about.html">About Us</a>
+  <a href="Information.html">Information</a>
+</div>
+
+
+
+<script type="text/javascript">
+
+	function changebgColor(el) {
+ 		document.body.style.backgroundColor = el.value;
+	}
+
+	function changetextColor(el) {
+ 		document.body.style.color = el.value;
+	}
+
+	function LoadImage (src_, element) {
+                  
+              document.getElementById('largeimage').src = src_;
+              
+              if (element.id=="desc1") {
+              	document.getElementById('imagedesc').textContent = text1;
+              } else if (element.id=="desc2") {
+              	document.getElementById('imagedesc').textContent = text2;
+              }else if (element.id=="desc3") {
+              	document.getElementById('imagedesc').textContent = text3;
+              }else if (element.id=="desc4") {
+              	document.getElementById('imagedesc').textContent = text4;
+              }else if (element.id=="desc5") {
+              	document.getElementById('imagedesc').textContent = text5;
+              }
+              
+            }
+            
+                var images1 = "images1.jpg";
+                var images2 = "images2.jpg";
+                var images3 = "images3.jpg";
+                var images4 = "images4.jpg";
+                var images5 = "images5.jpg";
+    
+    
+                <!--Description of the images-->    
+
+                var text1 = "If you your looking for a quality student grade accoustic guitar adn within a budget this is the best option for     you.";
+    
+                var text2 = "The holy grail of all guitars, This guitar is signed by many popular guitaris who changed the guitar world. Having this piece in your collection would make you stand out from other collecters in market. ";
+    
+                var text3 = "This seven string electric guitar is desinged for rock and hard rock. It is fitted with top of the line parts to give the user the ultimate exoerience of a Guitar.";
+    
+                var text4 = "The growling tiger electric guitar with its wild vintage vibe pays homage to an rock'n'roll artist.";
+    
+                var text5 = "The 3/4 LA Bass Guitar  combines classic looks and tone on a scale that is ideal for younger players, or anyone preferring a smaller and lighter bass guitar.";
+
+</script>
+
+<style>
+html, body{
+	font-family: Arial;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+    
+    .sitemap{
+        margin-bottom: -15px;
+    }
+
+.images{
+	width: 58%;
+	float: left;
+	border:2px solid black;
+	margin-right: 30px; 
+	padding: 10px;
+	justify-content: center;
+}
+
+#largeimage{
+	width: 350px;
+	height: 100%;
+	border:2px solid grey;
+	padding: 10px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+div.gallery:hover {
+  box-shadow: 0px 1px 10px 0px;	
+  background-color: #cce0ff;
+  border-radius: 0  0 10px 10px;
+  font-weight: bold;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 31%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+    
+    <div style="position: relative; top: 30px">
+        <img src="logo.png" style="max-width:100px;max-height:100px;">
+    </div>
+    <div style="position: relative; bottom: 80px">
+        
+        <h1 align="center">RYTHEM</h1>
+        <h4 align="center">"Relax, Be youself, Play alot".</h4> 
+                                                
+    </div>
+
+                                                
+                                                
+
+<br>
+<hr style="position: relative; bottom: 20px;">
+<br>
+
+<div class="grid">
+
+<h2>Guitar types we offer</h2>
+
+<div class="images">
+<!--division tag show a segment of the HTML file.-->
+    <!--Classic accoustic guitar-->
+<div class="responsive">
+  <div class="gallery" id="desc1" onClick="LoadImage(images1, desc1)">
+    <a target="_blank" href="img_5terre.jpg">
+      <center><a><img src="images1.jpg" alt="Cinque Terre" style="max-width:214px;max-height:130px;width: 100%; height: 100%;"></a></center>
+    </a>
+    <div class="desc">Classic accoustic guitar</div>
+  </div>
+</div>
+
+<!--Collectors guitar-->
+<div class="responsive">
+  <div class="gallery" id="desc2" onClick="LoadImage(images2, desc2)">
+    <a target="_blank" href="img_forest.jpg">
+      <center><a><img src="images2.jpg" alt="Forest" style="max-width:214px;max-height:130px;width: 100%; height: 100%;"></a></center>
+    </a>
+    <div class="desc">Collectors edition electric guitar</div>
+  </div>
+</div>
+    
+<!--Seven Guitar-->
+<div class="responsive">
+  <div class="gallery" id="desc3" onClick="LoadImage(images3, desc3)">
+    <a target="_blank" href="img_lights.jpg">
+        <center><a><img src="images3.jpg" alt="Northern Lights" style="max-width:214px;max-height:130px;width: 100%; height: 100%;"></a></center>
+    </a>
+    <div class="desc">Seven string electric guitar</div>
+  </div>
+</div>
+
+    
+    <!--Electric guitar-->
+<div class="responsive">
+  <div class="gallery" id="desc4" onClick="LoadImage(images4, desc4)">
+    <a target="_blank" href="img_mountains.jpg">
+        <center><a><img src="images4.jpg" alt="Mountains" style="max-width:214px;max-height:130px;width: 100%; height: 100%;"></a></center>
+    </a>
+    <div class="desc">Electric guitar</div>
+  </div>
+</div>
+
+    
+    <!--Bass guitar-->
+<div class="responsive">
+  <div class="gallery" onClick="LoadImage(images5, desc5)">
+    <a target="_blank" href="img_mountains.jpg">
+        <center><a id="desc5"><img src="images5.jpg" alt="Mountains" style="max-width:214px;max-height:190px;width: 100%; height: 100%;"></a></center>
+    </a>
+    <div class="desc">Bass guitar</div>
+  </div>
+</div>
+
+</div>
+    
+<!--Default viewing image and its desvription-->
+<div class="imageform">
+	<img id="largeimage" src="images1.jpg" style="max-width: 100%; max-height: 100%;">
+	<p id="imagedesc">If you your looking for a quality student grade accoustic guitar adn within a budget this is the best option for you.</p>
+</div>
+
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>We produce you with high end guitars for a fraction of the price. </p>
+  <p>We guarentee you that our product will serve you for a life time..</p>
+</div>
+
+<footer>
+    <p class="sitemap"><a href="Sitemap.html">Site Map</a></p>
+<hr style="position: relative; bottom: 20px">
+    
+    <!--CV is linke dto the image of this part-->
+    <div style="position: relative; top: 20px; left: 900px">
+        <p style="position: relative; bottom: 20px">Created By : </p>
+        <p style="position: relative; bottom: 20px">Dulitha Iddawela</p>
+        <a href="CV-Template/cv.html"> 
+            <img src="dulitha.jpg" style="max-width: 10%; max-height: 10%; position: relative; bottom: 100px; left: 150px; ">
+        </a>
+    </div>
+    
+    <!--Drop down menu to change th background color-->
+<div style="position: relative; bottom : 20px">
+    <label>Background Color: </label><select name="colors" onchange="changebgColor(this)">
+	<option value="white" selected="select">White</option>
+	<option value="black">Black</option>
+	<option value="#ffd280">Orange</option>
+	<option value="skyblue">Sky Blue</option>
+	<option value="yellow">Yellow</option>
+	<option value="cyan">Cyan</option>
+	<option value="gray">Gray</option>
+	<option value="khaki">Khaki</option>
+	<option value="silver">Silver</option></select>
+
+    
+    <!--Drop down menu to chage the text color-->
+<label>Text Color: </label><select name="colors" onchange="changetextColor(this)">
+	<option value="black" selected="select">Black</option>
+	<option value="white">White</option>
+	<option value="orange">Orange</option>
+	<option value="skyblue">Sky Blue</option>
+	<option value="yellow">Yellow</option>
+	<option value="cyan">Cyan</option>
+	<option value="gray">Gray</option>
+	<option value="khaki">Khaki</option>
+	<option value="silver">Silver</option></select>
+
+</div>
+
+</footer>
+
+</body>
+</html>

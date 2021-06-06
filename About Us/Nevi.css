@@ -1,0 +1,239 @@
+
+
+
+/* applies to all the elements*/
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;/*The box-sizing property tells the broser about the sizing properties*/
+		
+	}
+
+
+	#header {
+			height: 125px;
+			width: 100%;
+			position: fixed; /*element is positioned relative to the browser window*/
+			background-color: #328CC1;
+			transition:all 0.4s;
+			z-index: 100;/* specifies the order of the elements*/
+			opacity:0.8;
+		}
+	
+
+	/* styling of the onpage links*/
+	#path{
+		width:100%;
+		background-color:#40c7d1;
+		text-align:right;
+		opacity:0.8;
+		height:30px;
+		
+	}
+	
+	#path a{
+		color:black;
+		text-decoration:none;
+		font-family:'Roboto Slab', serif;
+		text-align:right;
+		padding-right:0.3%;
+		font-size:14pt;
+		margin:0 10pt 0 3pt;
+			
+	}
+	
+	#path a:hover{
+		color:white;
+		text-decoration:underline;
+	}
+
+
+
+	#nav{
+			float: right;
+			padding:40px;
+			transition:all 0.4s;
+			
+		}
+
+
+
+	#nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	  
+	}
+
+	#nav li {
+		float: left;
+		
+	}
+
+	#nav li a{
+		position:relative;/*element is positioned relative to its normal position*/
+		margin-right: 10px;
+		font-family: 'Roboto Slab', serif;
+		font-size:16pt;
+		
+		
+	}
+	
+	/*before psuedo element adds the syling to the content before the specified content */
+	/*reference: https://www.youtube.com/watch?v=FEmysQARWFU */
+	 #nav a::before{
+		content: '';/*to add generated content */
+		position: absolute;/*element is positioned relative to its ancestor element*/
+		display:block;
+		background-color:#ff884d;
+		width:0%;
+		height: 5px;
+		transition: all 0.4s;
+		 /*setting top edge of the element 1px below the top edge of its nearest positioned element */
+		top:1px;
+	}
+
+	#nav a:hover::before{
+	width:100%
+	}
+
+
+	 li a, .dropbtn {
+		display: inline-block;/*displayig the content as inline elements having a width ad height */
+		color: white;
+		text-align: center;
+		padding: 10px 16px;
+		text-decoration: none;
+	}
+	
+	/*changing color in .dropbtn when #nav li a or .dropdown is hovered */
+	#nav li a:hover, .dropdown:hover .dropbtn {
+	   color: #ffaa80;
+	}
+
+
+
+
+	#nav li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background: #328CC1;
+		min-width: 160px;
+		z-index: 1;
+		opacity:0.9;
+		height: 200px;
+	}
+
+	.dropdown-content a {
+		color: white;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	
+	}
+
+
+/*displaying elements in .dropdown-content as block when element in .dropdown is hovered */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	#footer{
+	height:65px;
+	width:100%;
+	position:relative;
+	background-color:#328CC1;
+	border-top-style: solid;
+	border-top-color: #beaebd;
+	border-top-width: 5px;
+	font-family: 'Roboto Slab', serif;
+	text-align:center;
+	margin-bottom:0%;
+
+	}
+
+
+
+	#footer p{
+		font-size:12pt;
+		padding: 25px 0px 0px 0px;
+		
+	}	
+	
+	#footer a{
+		text-decoration:none;
+		color:white;
+		font-family:font-family: 'Roboto Slab', serif;;
+	}
+	
+	#footer a:hover{
+		color:black;
+	}
+
+	#content6 {
+		
+		border-top-style: solid;
+		border-top-color: #beaebd;
+		border-top-width: 3px;
+		width:100%;
+		height:330px;
+		background-color:#D5DBDB;
+		position:relative;
+		
+		
+		
+	}
+	
+	#content6 h1{
+		text-align:center;
+		padding-top:3%;
+		padding-bottom:1%;
+		font-family:'Slabo 27px', serif;
+		transition:all 0.8s;
+		font-size:30pt;
+	}
+	
+	.subcont6{
+		float:left;
+		font-size:15pt;
+		width:300pt;
+		height:150pt;
+		margin-left:70px;
+		font-family:'Slabo 27px', serif;
+		
+		
+		}
+	
+	.subcont6 a{
+		font-size:33pt;
+		color:black;
+	}
+	
+	 #subcont61, #subcont62 {
+		border-right-style: solid;
+		border-right-color: #7F8C8D  ;
+		border-right-width: 3px;
+	}
+	
+	.subcont6 a:hover{
+		color:#ff884d;
+	}
+	
+	.subcont6 h2{
+		font-size:20pt;
+	}
+	
+	#icon3 i{
+		font-size:40pt;
+		margin-left:100%;
+		padding:0% 0% 0% 0%;
+		color:black;
+		
+		
+	}
+	

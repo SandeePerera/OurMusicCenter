@@ -1,0 +1,69 @@
+
+.detailsborder{
+	
+    margin-left: 190px;
+	margin-top: 200px;
+	position: relative;
+	border: 5px solid #ccc;
+	width: 1200px;
+	height: 1000px;
+	box-sizing: border-box;
+	background-color: grey;
+	border-radius:20px;
+
+}
+
+.profilepicture{
+	
+	margin-left: 810px;
+	margin-top: -850px;
+	position: static;
+}
+
+.personaldetails{
+	
+    margin-left:200px;
+	margin-top:100px;
+	
+}
+
+
+
+
+.detailstitle01{
+	font-size:30px;
+	font-family:Century Gothic; 
+	color:white;
+   
+}
+
+.Pdetails{
+	font-size:20px;
+	font-family:Century Gothic; 
+	color:white;
+	
+}
+
+
+.Educationaldetails{
+	
+    margin-left:200px;
+	
+}
+
+
+
+
+.detailstitle02{
+	font-size:30px;
+	font-family:Century Gothic; 
+	color:white;
+   
+}
+
+.Edetails{
+	font-size:20px;
+	font-family:Century Gothic; 
+	color:white;
+	
+}

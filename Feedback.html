@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Feedback</title>
+      <link rel="stylesheet" type="text/css" href="CSS\feedback.css">
+      <link rel="stylesheet" type="text/css" href="CSS\navigationbar.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Amaranth|Changa|Economica" rel="stylesheet">
+      <meta charset="UTF-8">
+      <style>
+         body {
+         background:url('Images\\feedback.jpg');
+         background-size: cover;
+         }
+      </style>
+      <script>
+         function formValidations() {
+         
+         var one = document.forms["feedback"]["firstname"].value;  // if user doesnt input a value to first name then after submit this one gives the alert
+         if (one == "") {
+         	alert("Please enter the first name and complete the form before submit");
+         	return false;//Stops Executing the function.
+         }
+         
+         var two = document.forms["feedback"]["lastname"].value;   // if user doesnt input a value to first name then after submit this one gives the alert
+         if (two == "") {
+         	alert("Please enter the last name and complete the form before submit");
+         	return false;//Stops Executing the function.
+         }
+         
+         if ( ( feedback.rating[0].checked == false ) && ( feedback.rating[1].checked == false ) && ( feedback.rating[2].checked == false ) && (feedback.rating[3].checked == false)){   //check the rating radio buttons one by one.
+         	alert ( "Please rate the site before submit" ); // if user doesnt rate this one gives the alert
+         	return false;//Stops Executing the function.
+         }
+         
+         var firstName=document.feedback.firstname.value;  //first name value stored in a variable
+         var lastName=document.feedback.lastname.value;  //last name value stored in a variable 
+         var text=document.feedback.Comment.value;  //user comments stored in a variable 
+         
+         var rated;
+         
+         if(feedback.rating[0].checked == true){  //check whether  user rate is bad
+         	rated="Bad";
+         }
+         else if(feedback.rating[1].checked == true){  //check whether  user rate is not bad
+         	rated="Not bad";
+         }
+         else if(feedback.rating[2].checked == true){  //check whether  user rate is good
+             rated="Good";
+         }
+         else{    //check whether  user rate is excelent
+         	rated="Excelent";
+         }
+         
+         if (text == ""){   //check whether  user input a comment and if user doesnt input a comment then this statement willbe correct and display this
+         	alert("Dear "+firstName+" "+lastName+" Thanks for your feedback. You have rated our site as "+rated+".");  
+         }
+         else{   //check whether  user input a comment and if user  inputs a comment then this statement willbe correct and display this
+         	alert("Dear "+firstName+" "+lastName+" Thanks for your feedback. You have rated our site as " +rated+ " and your comment was "+text);
+         }
+         }
+      </script>
+   </head>
+   <body>
+   <!----here is the nev bar----->
+      <div class="nav">
+         <ul>
+            <a class="logo" href="Home Page.html"><img src="Images/logo.png" width="75" height="75"></a>				   
+            <li><a class="big1" href="Home Page.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a class="big1" href="Store.html"><i class="fa fa-shopping-cart"></i>Store</a></li>
+            <li><a class="big1" href="index.html"+><i class="fa fa-photo"></i>Gallery</a></li>
+            <li><a class="big1" href="Quiz.html"><i class="fa fa-gamepad"></i>Quiz</a></li>
+            <li><a class="big1" href="Feedback.html"><i class="fa fa-file"></i>Feedback</a></li>
+            <li><a class="big1" href="about.html"><i class="fa fa-user"></i>About Us</a></li>
+            <li><a class="big1" href="Information.html"><i class="fa fa-user"></i>Information</a></li>
+         </ul>
+      </div>
+      <div class="interface">
+         <!--Here the form-->
+         <form name="feedback" autocomplete="off">
+            <!--erase the saved data-->
+            <label for="fname">First Name</label>  <!-- Here the heading first name-->
+            <input type="text"  name="firstname" placeholder="Enter Your first name.." >
+            <label for="lname">Last Name</label> <!-- Here the heading last name-->
+            <input type="text"  name="lastname" placeholder="Enter Your last name..">
+            <label for="lname">Email Address</label> <!-- Here the heading email address-->
+            <input type="text"  name="Email" placeholder="Enter Your email address..">			
+            <label for="comment">Enter Your Comment</label> <!-- Here the heading enter your comment-->
+            <textarea  name="Comment" placeholder="Write Your comment here.." style="height:200px"></textarea>
+            <div>
+               <label for="rate"><b>Rate our site</b></label>
+               <br><br>
+               <div class="rating">
+                  <!-- Here the ratings-->
+                  <input type="radio" name="rating"><b>Bad</b>
+                   <input type="radio" name="rating"><b>Not Bad</b>
+                  <input type="radio" name="rating"><b>Good</b>
+                   <input type="radio" name="rating"><b>Excelent</b>
+               </div>
+            </div>
+            <p>
+               <input type="submit" name="Submit" onClick="formValidations()"> <!-- Here the submit button and when click the button js will  work-->
+            </p>
+         </form>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	  
+      <div class="footer">
+	  
+         <div class="aboutsitetitle">Welcome to the world’s most popular music gear website.</div>
+         <div class="discription">Guitar Center is the online marketplace for musicians to buy and learn about new, used, <br>vintage and handmade music guitars and gears.<br>
+When Guitar Center launched in 2019, it was founded on the principle<br> that buying musical instruments should be easy and affordable.<br>
+Since then we’ve become a thriving marketplace that connects millions<br> of people around the world to the gear and the inspiration needed to make music.
+		 
+		 <p><a href="Sitemap.html">Site Map</a></p>
+		 </div>
+         <div class="socialmedia">
+            <a class="social">Social Media</a>
+            <a href="https://en-gb.facebook.com/login/"><img src="Images/fb.jpg" width="46" height="40"></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="Images/insta.png" width="40" height="40"></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="Images/snapchat.jpg" width="40" height="40"></a>
+            <a href="https://twitter.com/login?lang=en"><img src="Images/twiter.jpg" width="40" height="40"></a>
+            <div class="vl"></div>
+         </div>
+         <div class="owner">Created By :-</div>
+         <a href="Chamal Perera.html"  class="ownerphoto"><img src="Images/my.jpg" width="45" height="45"></a>
+      </div>
+   </body>
+</html>

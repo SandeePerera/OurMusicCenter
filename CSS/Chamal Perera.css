@@ -1,0 +1,67 @@
+.detailsborder {
+	margin-left: 190px;
+	margin-top: 200px;
+	position: relative;
+	border: 5px solid #ccc;
+	width: 1200px;
+	height: 1000px;
+	box-sizing: border-box;
+	background-color: grey;
+	border-radius: 20px;
+}
+
+.profilepicture {
+	/**change the position of profile picture photo*/
+	margin-left: 810px;
+	margin-top: -850px;
+	position: absolute;
+}
+
+.CVtitle {
+	font-family: 'Amaranth', sans-serif;
+	/**change the colours and positions of main title of the CV */
+	font-size: 50px;
+	color: white;
+	margin-left: 400px;
+	margin-top: 20px;
+	position: absolute;
+}
+
+.personaldetails {
+	/**change the  positions of sub title 1 and the personal information  of the CV */
+	margin-left: 200px;
+	margin-top: 150px;
+}
+
+.detailstitle01 {
+	/**change the  font sizes and colours of  1st sub title */
+	font-size: 30px;
+	font-family: Century Gothic;
+	color: white;
+}
+
+.Pdetails {
+	/**change the  font sizes and colours of personal information */
+	font-size: 20px;
+	font-family: Century Gothic;
+	color: white;
+}
+
+.Educationaldetails {
+	/**change the  positions of sub title 2 and the educational information  of the CV */
+	margin-left: 200px;
+}
+
+.detailstitle02 {
+	/**change the  font sizes and colours of  2nd sub title */
+	font-size: 30px;
+	font-family: Century Gothic;
+	color: white;
+}
+
+.Edetails {
+	/**change the  font sizes and colours of educational information */
+	font-size: 20px;
+	font-family: Century Gothic;
+	color: white;
+}

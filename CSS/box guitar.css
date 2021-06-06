@@ -1,0 +1,63 @@
+.detailsborder {
+	margin-left: 190px;
+	margin-top: 200px;
+	position: relative;
+	border: 5px solid #ccc;
+	width: 1200px;
+	height: 1000px;
+	box-sizing: border-box;
+	background-color: grey;
+	border-radius: 20px;
+    resize: horizontal;
+    overflow: auto;
+}
+/**change the colours and positions of main title of the page */
+.name{
+    margin-left: 600px;
+    margin-top: 125px;
+    color: gray;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 50px;
+    
+}
+.details{
+    margin-left: 30px;
+    margin-top: 60px;
+    color: white;
+    font-size: 16px;
+   
+}
+/**change the position of picture photo*/
+.pic{
+    margin-left: 900px;
+    margin-top: -250px;
+    
+    
+}
+.history{
+    margin-top: 45px;
+    margin-left: 100px;
+    color: white;
+    font-size: 45px;
+    
+}
+.Amplification{
+    color: white;
+    font-size: 45px;
+    margin-left: 100px;
+    margin-top: ;
+}
+.pic1{
+    margin-left: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.made{
+    color: white;
+    font-size: 45px;
+    margin-left: 100px;
+    margin-top: ;
+}
+.madenote{
+    margin-left: 275px;
+}

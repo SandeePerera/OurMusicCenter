@@ -1,0 +1,367 @@
+
+/** when user move the cursive to inside thing of navigaton bar it willbe increased the font size of elements */
+
+a.big1:hover,
+a.big1:active {
+	font-size: 150%;
+}
+
+
+/** make naviagation bar */
+
+.nav {
+	width: 100%;
+	background: black;
+	height: 100px;
+	margin: 0px;
+	opacity: 0.7;
+	box-shadow: 0px 10px 10px #000000;
+	z-index: 1;
+	/** this helps to place navigation bar  over the vedio. */
+	top: 0;
+	/** this helps to place on the top of the website. */
+	position: fixed;
+	border-radius: 20px;
+}
+
+
+/** change the inside of navigation bar */
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	float: right;
+	
+}
+
+
+/** make naviagation bar */
+
+li {
+	margin-top: 25px;
+	position: relative;
+	float: left;
+}
+
+
+/** change the positions and sizes of the logo */
+
+.logo {
+	width: 165px;
+	padding: 10px;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+
+
+/** decorate the inside things of navigation bar */
+
+ul li a {
+	width: 165px;
+	color: gray;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	font-family: Century Gothic;
+	font-weight: bold;
+}
+
+
+/** when user move the cursive to inside thing of navigaton bar it willbe changed the colour */
+
+ul li a:hover {
+	background: #02547a;
+}
+
+
+/** change the position of icons inside the navigation bar */
+
+ul li a i {
+	margin-right: 10px;
+}
+
+
+/** show the dropdown navigation bar over the images and other thing */
+
+ul li ul li {
+	float: none;
+	z-index: 2;
+}
+
+
+/** custamize the colors and other thing of dropdown navigation bar */
+
+ul li ul {
+	background-color: black;
+	display: none;
+	border-radius: 20px;
+}
+
+
+/** user move the cursive to main navigaton bar and then show the drpdown navigation bar */
+
+ul li:hover ul {
+	display: block;
+}
+
+
+/** creat red border */
+
+.border {
+	margin-left: 778px;
+	margin-top: 80px;
+	border: 6px solid #8c0404;
+	width: 150px;
+	height: 250px;
+	box-sizing: border-box;
+	background-color: none;
+	opacity: 0.8;
+	position: absolute;
+}
+
+
+/** Decorate "RELAX"  line using different font style and other thing*/
+
+.details1 {
+	margin-left: 220px;
+	margin-top: 110px;
+	font-family: Arial Black;
+	font-size: 70px;
+	color: white;
+	opacity: 0.8;
+	position: absolute;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+/** decorate "BE YOURSELF"  line using different font style*/
+
+.details2 {
+	margin-left: 550px;
+	margin-top: 160px;
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	color: white;
+	opacity: 0.8;
+	position: absolute;
+	font-style: italic;
+}
+.details3{
+    margin-left: 850px;
+    margin-top: 230px;
+    font-family: Arial Black;
+    font-size: 70px;
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/** decorate headline  using different font style*/
+
+.headline1 h4 {
+	position: absolute;
+	top: 80%;
+	margin-left: 100px;
+	margin-top: 150px;
+	color: white;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 50px;
+}
+
+
+/** decorate discription  using different font style,colours and positions*/
+
+.other2 h5 {
+	position: absolute;
+	top: 110%;
+	margin-left: 95px;
+	margin-top: 60px;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 22px;
+}
+
+
+/** make the size and position horizontal line between other1 and other2 lines*/
+
+.Hl {
+	border-top: 4px solid white;
+	width: 370px;
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 75px;
+    }
+
+
+/** make the footer */
+
+.footer {
+	position: relative;
+    margin-top: auto;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	opacity: 0.8;
+}
+
+
+
+/**decorate and change the position of vertical line  inside the footer*/
+
+.vl {
+	border-left: 2px solid white;
+	height: 170px;
+	position: absolute;
+	margin-left: -150px;
+	margin-top: -104px;
+	z-index: 0;
+}
+
+
+/**decorate the title of about the site*/
+
+.aboutsitetitle {
+	z-index: 2;
+	margin-top: 25px;
+	margin-left: 100px;
+	position: absolute;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 25px;
+}
+
+
+/** decorate the information of the site*/
+
+.discription,.discription p a {
+	z-index: 2;
+	margin-top: 60px;
+	margin-left: 80px;
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 13px;
+}
+
+.discription p a{
+	margin-left:-600px;
+	position:relative;
+	color: white;
+	font-family: Century Gothic;
+	font-size:20px;
+}	
+
+.social {
+	z-index: 1;
+	margin-top: -46px;
+	margin-left: 20px;
+	position: absolute;
+	font-family: 'Amaranth', sans-serif;
+	font-size: 23px;
+}
+
+
+/** social media icons*/
+
+.socialmedia {
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 920px;
+	z-index: 1;
+}
+
+
+/** creater photo*/
+
+.ownerphoto {
+	margin-top: 137px;
+	margin-left: 563px;
+	position: absolute;
+	font-family: Century Gothic;
+	font-size: 10px;
+}
+
+.owner {
+	margin-top: 150px;
+	margin-left: 1200px;
+	font-family: Century Gothic;
+	font-size: 15px;
+	position: absolute;
+}
+
+.ownerphoto img,
+.socialmedia img {
+	/**change the border radius of photo*/
+	border-radius: 50%;
+}
+
+/**About us CSS**/
+.aboutus{
+    margin-top:-70px;
+    margin-left: 600px;
+    position: absolute;
+    color: gray;
+    font-size: 50px;
+    font-family: 'Amaranth', sans-serif;
+    font-style: italic;
+}
+.paragraph{
+    margin-top: 350px;
+    margin-left: 300px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 30px;
+    margin-right: 350px;
+    color: white;
+}
+aboutusborder {
+	margin-left: 290px;
+	margin-top: 1500px;
+	position: relative;
+	border: 5px solid black;
+	width: 1200px;
+	height: 1000px;
+	box-sizing: border-box;
+	background-color: grey;
+	border-radius: 20px;
+}
+/********about us footer**********/
+.footer1 {
+	position: relative;
+    margin-top: auto;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	opacity: 0.8;
+}
+
+/**index footer**/
+.footer2 {
+	position: relative;
+    margin-top: 550px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	opacity: 0.8;
+}
+

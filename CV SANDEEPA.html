@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+	<html lang=“en”>
+		<head>
+		
+            
+			<style type="text/css">
+			
+
+				
+				
+
+				/* applies to all the elements*/
+				*{
+					margin: 0;
+					padding: 0;
+					box-sizing: border-box;/*The box-sizing property tells the broser about the sizing properties*/
+				
+				}
+
+
+				#content{
+						width:100%;
+						height:2500px;
+						background-color:#f5f5f0;
+							
+				}
+                
+
+				.label{
+						float:left;
+						margin-right:10pt;
+						margin-bottom:15pt;
+						margin-left:300pt;
+						width:200px;
+						height:50px;
+						font-size:16pt;	
+						font-family: 'Slabo 27px', serif;
+
+				}
+
+				.cont{
+						display: block;
+						margin-bottom:15pt;
+						width:400px;
+						height:50px;
+						font-size:14pt;
+						margin-left:50%;
+						font-family: 'Slabo 27px', serif;
+
+				}
+
+
+
+				#top h1{
+					margin-left:25%;
+					width:580pt;
+					padding-top:5%;
+					font-size:50pt;
+					border-bottom-style:solid;
+					border-width:3px;
+					padding-left:7%;
+					font-family: 'Slabo 27px', serif;
+
+				}
+
+				hr{
+					border-width:3px;
+					color:#beaebd;
+
+				}
+
+				#top h2{
+					margin-left:32%;
+					padding-top:1.5%;
+					font-size:23pt;
+					font-family: 'Slabo 27px', serif;
+
+				}
+
+				pre{
+					margin-left:55%;
+					font-size:12pt;
+					margin-top:-2%;
+				}
+
+				#cont2, #cont3, #cont4, #cont1, #bio{
+						padding: 40px 0 40px 0;
+				}
+
+				#top{
+					width:100%;
+					height:200pt;
+					background-color:#328CC1;
+					border-bottom-color: #beaebd;
+					border-bottom-width: 5px;
+					border-bottom-style: solid;
+				}
+
+				#imag{
+					background-image:url("Images/Sandeepa.jpeg");
+					border-radius:50%;
+					width:220px;
+					height:220px;
+					margin-left:72%;
+					margin-top:-150pt;
+				}
+
+				#footer{
+					height:65px;
+					width:100%;
+					position:relative;
+					background-color:#328CC1;
+					border-top-style: solid;
+					border-top-color: #beaebd;
+					border-top-width: 5px;
+					font-family: 'Slabo 27px', serif;
+					text-align:center;
+					margin-bottom:0%;
+
+				}
+
+
+
+				#footer p{
+						font-size:18pt;
+						padding: 25px 0px 0px 0px;
+						margin-left:-900pt;
+						
+				}	
+					
+				#footer a{
+						text-decoration:none;
+						color:white;
+						font-family: 'Slabo 27px', serif;
+				}
+					
+				#footer a:hover{
+					color:black;
+				}
+
+				#path{
+						width:100%;
+						background-color:#40c7d1;
+						text-align:right;
+						opacity:0.8;
+						height:30px;
+						position:fixed;
+						
+				}
+					
+				#path a{
+						color:black;
+						text-decoration:none;
+						font-family:'Roboto Slab', serif;
+						text-align:right;
+						padding-right:0.3%;
+						font-size:14pt;
+						margin:0 10pt 0 5pt;
+							
+				}
+				
+                                                               
+                                                               
+				/* this goes under the transparent on page navigation bar*/
+				#mokcont{
+					width:100%;
+					height:30px;
+					background-color:#328CC1;
+				}
+				
+				#path a:hover{
+					color:white;
+					text-decoration:underline;
+				}
+				
+				#cont4 pre{
+					padding: 30px 0 20px 0;
+				}
+				
+				#cont3 pre{
+					padding: 5px 0 30px 0;
+				}
+				
+				#bio{
+					text-align: center;
+					font-family: 'Slabo 27px', serif;
+				}
+					
+				#bio p{
+					font-size:14pt;
+				}
+					
+				#bio h3{
+					padding: 0 0 20px 0;
+					font-size:18pt;	
+					font-family: 'Slabo 27px', serif;
+				}
+
+
+			</style>
+            
+
+		</head>
+        
+        
+
+        
+		<body>
+                
+
+			<!--onpage navigation-->
+			<div id="path" role="navigation" aria-label="onpage navigation">
+				<a  href="#info1">Bio >></a>
+				<a  href="#cont1">General >></a>
+				<a  href="#cont2">Education >></a>
+				<a href="#cont3">Skills >></a>
+                <a href="#cont4">References</a>
+                                
+				
+			</div>
+                                
+			
+			<!--content used for aligning the rest of the divs properly due to the transparent header-->
+			<div id="mokcont" aria-hidden="true"></div>
+		
+			<div id="content" role="group">
+
+				<div id="info1" role="group">
+					<div id="top" role="header">
+						<h1>Curriculm Vitae</h1>
+						<div id="imag" role="presentation"></div>
+					</div>
+
+					<div id="bio" role="contentinfo">
+						<h3>Personal Statement</h3>
+						<p>
+						I am an enthusiastic, self-motivated student looking for an internship to gain hands-on experience in the industry.<br>
+						I have the ability to focus on a specific task, and get work done on time. My goal is to become a <br>
+						Software Developer, face Challengers in the Industrial structure and tackling them with<br>
+						creative and diversified soultions.
+						</p>
+					</div>
+				</div>
+			
+				<hr role="divide">
+
+				<div id="cont1" role="contentinfo">
+					<h3 class="label">Full Name</h3>
+					<p class="cont">Sandeepa Sewwndi Perera.</p>
+
+					<h3 class="label">Address</h3>
+					<p class="cont">104/23, Nugahena watta, Halpita, Polgasowita, Sri Lanka</p>
+
+					<h3 class="label">E-mail</h3>
+					<p class="cont">sandeepa.2017184@iit.ac.lk</p>
+
+					<h3 class="label">Nationality</h3>
+					<p class="cont">Sri Lankan</p>
+
+					<h3 class="label">Date of Birth</h3>
+					<p class="cont">1997/06/23</p>
+
+					<h3 class="label">Gender</h3>
+					<p class="cont">Female</p>
+
+					<h3 class="label">Desired Employment</h3>
+					<p class="cont">Software Developer</p>
+				</div>
+
+
+				<hr role="divide">
+
+
+				<div id="cont2" role="contentinfo">
+					<h3 class="label">Education</h3>
+					<p class="cont">School: Central Collage Piliyandala - 2003 to 2016<br><br>
+					Ordinary Level:</p><br><br>
+<!--pre tags align text in the way they are written in-->					
+<pre>
+Buddhism:       A
+English:        C
+Science:        B
+Mathematics:    C
+History:        B
+Drama:			A
+Commerse:		A
+ICT:			A
+</pre><br>
+					<p class="cont">Advanced Level: Science Stream</P>
+<!--pre tags align text in the way they are written in-->						
+<pre>
+
+Biology:        S
+Physics:        S
+Cheminstery:    F
+</pre><br>
+					
+				
+					<p class="cont">College: Informatics Institute of Technology - 2016 to 2020<br>
+				Degree: BsCS(Hons) Computer Science</p>
+				</div>
+
+
+				<hr role="divide">
+
+
+				<div id="cont3" role="contentinfo">
+					<h3 class="label">Skills</h3>
+					<p class="cont">Languages</p>
+<!--pre tags align text in the way they are written in-->						
+<pre>
+Java
+HTML
+CSS
+JavaScript
+SQL
+</pre>
+
+					<p class="cont">Soft Skills</p>
+<!--pre tags align text in the way they are written in-->						
+<pre>
+managing                                   
+Leadership skills
+Team-Player
+Organized
+</pre>
+				</div>
+
+				<hr role="divide">
+
+				<div id="cont4" role="contentinfo">
+					<h3 class="label">References</h3>
+<!--pre tags align text in the way they are written in-->						
+<pre>
+Mr A.K.Jayawardana,
+Software Engineer,
+Nugegoda, Sri Lanka.
+Tel: 071-xxxxxxx
+</pre><br>
+<!--pre tags align text in the way they are written in-->	
+<pre>
+Mr Saman Kaluarachchi,
+Colombo 06, Sri Lanka.
+Tel: 077-xxxxxxx
+</pre>
+				</div>
+
+
+			</div>
+
+			<div id="footer" role="navigation">
+				<a href="Home Page.html" alt="to home page">Back</a>
+			</div>
+	
+			
+
+		</body>
+	</html>

@@ -1,0 +1,140 @@
+/* this goes under the transparent navigation bar*/
+		#mock_content{
+			width:100%;
+			height:125px;
+			background-color:white;
+			z-index:-1;/* specifies the order of the elements*/
+		}
+
+.body{
+margin-top:30%;
+background-color: black;
+}
+
+#content2{
+    background-image: url(background 1.jpg)
+}
+
+#pics{
+    background-image: url(background 1.jpg)
+}
+.pic{
+		border-radius:50%;
+		margin-left:5%;
+		
+		width:250px;
+		height:250px;
+		float:left;
+		display:inline;
+		margin-top:30px;
+		border: 2px solid blue;
+		  
+		transition:all 0.3s ease-in-out;
+		
+	}
+	
+	#pics{
+		width:100%;
+		height:400px;
+	}
+
+#pic1:hover {
+	background-image: url("Images/ig3.jpg");
+    background-color: black;
+	opacity:1;
+	border-radius:0;
+	cursor:pointer;
+}
+#pic2:hover {
+	background-image: url("Images/ig1.jpg");
+    background-color: black;
+	opacity:1;
+	border-radius:0;
+	cursor:pointer;
+}
+#pic3:hover {
+	background-image: url("Images/ig4.jpeg");
+    background-color: black;
+	opacity: 1;
+	border-radius:0;
+	cursor:pointer;
+}
+#pic4:hover {
+	opacity: 1;
+	background-image: url("Images/ig2.jpeg");
+    background-color: black;
+    border-radius:0;
+	cursor:pointer;
+	
+}
+ #pic1 {
+		background-image: url("Images/ig3.jpg");
+		opacity:1;
+		
+	}
+	
+	#pic2{
+		background-image: url("Images/ig1.jpg");
+		opacity:1;
+	}
+	
+	#pic3{
+		background-image: url("Images/ig4.jpeg");
+		opacity:1;
+	}
+	
+	#pic4{
+		background-image: url("Images/ig2.jpeg");
+		opacity:1;
+		
+	}
+	
+	#content2{
+		text-decoration: underline;
+		font-size:56px;
+		color:blue;
+		font-weight:bold;
+		text-align:center;
+		padding:50px;
+		font-family: Lucida Calligraphy;
+
+	}	
+.text {
+	
+	font-size: 19px;
+    font-weight: bold;
+	opacity:0;
+	text-align: center;
+    font-family:Modern No. 20;
+    transition: all 0.5s ease-in-out;
+	
+}
+#pic1:hover .text {
+	color:white;
+  padding-top: 90px;
+  opacity: 1;
+  
+ 
+	}
+	
+#pic2:hover .text {
+	color:white;
+  padding-top: 90px;
+  opacity: 1;
+ 
+	}
+
+#pic3:hover .text {
+	color:white;
+  padding-top: 90px;
+  opacity: 1;
+ 
+	}
+	
+#pic4:hover .text {
+	color:white;
+  padding-top: 90px;
+  opacity: 1;
+ 
+	}
+	

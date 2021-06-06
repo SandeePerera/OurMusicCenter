@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rythems</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css"  />
+    <link rel="stylesheet" type="text/css" href="CSS/navigationbar.css"  />
+      <style>
+         body {
+         background:url('Images/storeback.jpg');
+         background-size: cover;
+         }
+      </style>
+  </head>
+  <body>
+      <div class="nav">
+         <ul>
+            <a class="logo" href="Home Page.html"><img src="Images/logo.png" width="75" height="75"></a>				   
+            <li><a class="big1" href="Home Page.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a class="big1" href="Store.html"><i class="fa fa-shopping-cart"></i>Store</a></li>
+            <li><a class="big1" href="index.html"+><i class="fa fa-photo"></i>Gallery</a></li>
+            <li><a class="big1" href="Quiz.html"><i class="fa fa-gamepad"></i>Quiz</a></li>
+            <li><a class="big1" href="Feedback.html"><i class="fa fa-file"></i>Feedback</a></li>
+            <li><a class="big1" href="about.html"><i class="fa fa-user"></i>About Us</a></li>
+            <li><a class="big1" href="Information.html"><i class="fa fa-user"></i>Information</a></li>
+         </ul>
+      </div>
+    <div class="container">
+      <h1>Rythems</h1>
+
+      <div id = "function1" class = "product">
+        <img id = "image1" src = "images/pic01.jpg" alt = "gt" />
+        <div class="description">
+          Fender Stratocaster
+          <div class = "price" id = "whitePrice">
+            Price : $240
+          </div>
+        </div>
+      </div>
+
+      <div id = "function2" class = "product">
+        <img id = "image2" src = "images/pic06.jpg" alt = "gt2" />
+        <div class = "description">
+           Acoustic guitar
+          <div class= "price" id = "pinkPrice">
+            Price : $280
+          </div>
+        </div>
+      </div>
+
+      <div id = "function3" class = "product">
+        <img id = "image3" src = "images/pic03.jpg" alt = "gt3" />
+        <div class = "description">
+          Collings I-35 Deluxe
+          <div class="price" id = "redPrice">
+              Price : $300
+          </div>
+        </div>
+      </div>
+
+      <div class="labelOrder">
+        Your Order:
+        <div id="orderDescription">
+        </div>
+        <div class="product" id="order">
+        </div>
+      </div>
+
+      <form name = "flowerForm">
+        Guitars :
+        <select id = "option" name = "Options">
+          <option value = "pleaseSelect0">
+            Top Sellers
+          </option>
+          <option value = "withChampagne">
+            With Warrenty
+          </option>
+          <option value = "extra">
+            Without Warrenty
+          </option>
+        
+        </select>
+        Options:
+        <input type ="radio" name = "color" value = "white" id = "white"/>Product 01
+        <input type = "radio" name = "color" value = "pink" id = "pink" />Product 02
+        <input type = "radio" name = "color" value = "red" id = "red" />Product 03
+        <input type = "button" name = "order" value = "Place your order" onclick="displayFinalPrice()"/>
+        <input type = "reset" name = "reset" value = "Reset" />
+      </form>
+
+    </div>
+      <div class="footer3">
+	  
+         <div class="aboutsitetitle">Welcome to the world’s most popular music gear website.</div>
+         <div class="discription">Guitar Center is the online marketplace for musicians to buy and learn about new, used, <br>vintage and handmade music guitars and gears.<br>
+When Guitar Center launched in 2019, it was founded on the principle<br> that buying musical instruments should be easy and affordable.<br>
+Since then we’ve become a thriving marketplace that connects millions<br> of people around the world to the gear and the inspiration needed to make music.
+		 
+		 <p><a href="Sitemap.html">Site Map</a></p>
+		 </div>
+         <div class="socialmedia">
+            <a class="social">Social Media</a>
+            <a href="https://en-gb.facebook.com/login/"><img src="Images/fb.jpg" width="46" height="40"></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="Images/insta.png" width="40" height="40"></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="Images/snapchat.jpg" width="40" height="40"></a>
+            <a href="https://twitter.com/login?lang=en"><img src="Images/twiter.jpg" width="40" height="40"></a>
+            <div class="vl"></div>
+         </div>
+         <div class="owner">Created By :-</div>
+         <a href="CV.html"  class="ownerphoto"><img src="Images/Toran.jpeg" width="45" height="45"></a>
+      </div>
+
+    <script>
+
+      var totalPrices = 0;
+      function getRadioValue (radio){
+        var radioArray = flowerForm.elements[radio];
+        var i;
+        for (i=0;i<radioArray.length;i++){
+          if (radioArray[i].checked){
+            return radioArray[i].value;
+          }
+        }
+        return "";
+      }
+
+      function getSelectedValue (selectList){
+        return selectList[selectList.selectedIndex].value;
+      }
+
+      function getSelectedText( selectList){
+        return selectList.options[ selectList.selectedIndex].text;
+      }
+
+      function CheckOptions (formRef){
+        var optionString = getSelectedValue(document.getElementById("option"));
+        if (optionString.indexOf("Champagne")>-1){
+          document.getElementById("image1").src = "images/pic04.jpg";
+          document.getElementById("image2").src = "images/pic05.jpg";
+          document.getElementById("image3").src = "images/pic06.jpg";
+        }else{
+          document.getElementById("image1").src = "images/pic01.jpg";
+          document.getElementById("image2").src = "images/pic02.jpg";
+          document.getElementById("image3").src = "images/pic03.jpg";
+        }
+
+        var chosenBouquet = getRadioValue('color');
+        displayBouquet(chosenBouquet);
+      }
+
+      function displayBouquet(chosenBouquet){
+        switch (chosenBouquet) {
+          case "white":
+            document.getElementById("order").innerHTML = document.getElementById("function1").innerHTML;
+            totalPrices = document.getElementById("whitePrice").innerHTML;
+            break;
+          case "pink":
+            document.getElementById("order").innerHTML = document.getElementById("function2").innerHTML;
+            totalPrices = document.getElementById("pinkPrice").innerHTML;
+            break;
+          case "red":
+            document.getElementById("order").innerHTML = document.getElementById("function3").innerHTML;
+            totalPrices = document.getElementById("redPrice").innerHTML;
+            break;
+          default:
+        }
+      }
+
+      function resetOrder (){
+        document.getElementById("image1").src = "images/pic01.jpg";
+        document.getElementById("image2").src = "images/pic02.jpg";
+        document.getElementById("image3").src = "images/pic03.jpg";
+        document.getElementById("order").innerHTML = "";
+      }
+
+      function displayFinalPrice(){
+        alert("Your Final price is : "+totalPrices)
+      }
+
+
+      document.forms[0].addEventListener("reset",resetOrder);
+
+      document.getElementById("white").addEventListener("click",function(){displayBouquet("white")});
+      document.getElementById("pink").addEventListener("click",function(){displayBouquet("pink")});
+      document.getElementById("red").addEventListener("click",function(){displayBouquet("red")});
+
+      document.getElementById("option").addEventListener("change",function(){CheckOptions(this.form)});
+
+      document.getElementById("image1").addEventListener("click",function(){
+        displayBouquet("white");
+        document.getElementById("white").checked=true;
+      })
+      document.getElementById("image2").addEventListener("click",function(){
+        displayBouquet("pink");
+        document.getElementById("pink").checked=true;
+      })
+      document.getElementById("image3").addEventListener("click",function(){
+        displayBouquet("red");
+        document.getElementById("red").checked=true;
+      })
+
+    </script>
+  </body>
+</html>
+
+
